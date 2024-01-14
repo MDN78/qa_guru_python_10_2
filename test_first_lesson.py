@@ -1,6 +1,5 @@
 from selene import browser, be, have
 
-
 def test_google_request():
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('yashaka/selene').press_enter()
